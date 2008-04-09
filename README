@@ -1,0 +1,72 @@
+perl-Parse-Yapp
+------------------------------------------
+This is a Perl extension that allows you to perform XQL queries on XML 
+object trees. Currently only the XML::DOM module is supported, but other 
+implementations, like XML::Grove, may soon follow.
+
+Runtime requirements:
+  perl-5.10.0-3
+  perl-Date-Manip-5.48-1
+  perl-Parse-Yapp-1.05-1
+  perl-XML-DOM-1.44-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.9-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://search.cpan.org/dist/Parse-Yapp/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Parse-Yapp-0.68-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Parse-Yapp-0.68-X.cygport all
+
+This will create:
+  /usr/src/perl-Parse-Yapp-0.68-X-src.tar.bz2
+  /usr/src/perl-Parse-Yapp-0.68-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xql.pl
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/DOM.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Date.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Debug.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/DirXQL.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Parser.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Plus.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Query.pod
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Strict.pm
+  /usr/lib/perl5/vendor_perl/5.10/XML/XQL/Tutorial.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/XML/XQL/.packlist
+  /usr/share/doc/perl-XML-XQL-0.68/Changes
+  /usr/share/doc/perl-XML-XQL-0.68/README
+  /usr/share/man/man3/XML.XQL.3pm.gz
+  /usr/share/man/man3/XML.XQL.DOM.3pm.gz
+  /usr/share/man/man3/XML.XQL.Date.3pm.gz
+  /usr/share/man/man3/XML.XQL.Query.3pm.gz
+  /usr/share/man/man3/XML.XQL.Tutorial.3pm.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.68-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
